@@ -1,9 +1,20 @@
 import os
-from typing import Optional
+from typing import Optional 
 import uvicorn
 from fastapi import FastAPI, File, Form, HTTPException, Depends, Body, UploadFile
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.staticfiles import StaticFiles
+
+import pinecone
+
+pinecone.init(api_key="35cb9f2b-bede-4b7f-9d09-a317b651844c")
+
+index = "anoeses-vector"
+
+if index not in pinecone.list_indexes():
+    pinecone.create_index(name=index, metric="cosine")
+
+pinecone_index = pinecone.Index(index_name=index)
 
 from models.api import (
     DeleteRequest,

@@ -1,0 +1,21 @@
+services:
+  # FastAPI Server
+  - type: web
+    name: retrieval-plugin-server 
+    region: oregon
+    plan: starter
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars: 
+      - key: DATASTORE
+        value: pinecone
+      - key: BEARER_TOKEN
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNjY5OTExODg4IiwibmFtZSI6ImRvYnJpayIsImlhdCI6MTUxNjIzOTAyMn0.PJsHu4ofV1lK92IIT1dYNf7EZH9Ihhdu9OH0-KVcOVE9
+      - key: OPENAI_API_KEY
+        value: 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
+      - key: PINECONE_API_KEY
+        value: 35cb9f2b-bede-4b7f-9d09-a317b651844c
+      - key: PINECONE_ENVIRONMENT
+        value: asia-northeast1-gcp
+      - key: PINECONE_INDEX
+        value: anoeses-data

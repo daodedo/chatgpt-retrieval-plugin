@@ -18,4 +18,4 @@ services:
       - key: PINECONE_ENVIRONMENT
         value: asia-northeast1-gcp
       - key: PINECONE_INDEX
-        value: anoeses-data
+        value: anoeses-vector

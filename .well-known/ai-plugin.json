@@ -13,7 +13,7 @@
     "url": "http://retrieval-plugin-server-rg7s.onrender.com",
     "has_user_authentication": false
   },
-  "logo_url": "hhttps://retrieval-plugin-server-rg7s.onrender.com/logo.png",
+  "logo_url": "http://retrieval-plugin-server-rg7s.onrender.com/logo.png",
   "contact_email": "hello@contact.com",
-  "legal_info_url": "https://retrieval-plugin-server-rg7s.onrender.com/legal"
+  "legal_info_url": "http://retrieval-plugin-server-rg7s.onrender.com"
 }

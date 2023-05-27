@@ -1,7 +1,7 @@
 services:
   # FastAPI Server
   - type: web
-    name: retrieval-plugin-server 
+    name: retrieval-langchain
     region: oregon
     plan: starter
     env: docker
@@ -10,12 +10,12 @@ services:
       - key: DATASTORE
         value: pinecone
       - key: BEARER_TOKEN
-        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNjY5OTExODg4IiwibmFtZSI6ImRvYnJpayIsImlhdCI6MTUxNjIzOTAyMn0.PJsHu4ofV1lK92IIT1dYNf7EZH9Ihhdu9OH0-KVcOVE9
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwOTA5MDk4ODgiLCJuYW1lIjoiZG9icmlrIiwiaWF0IjoxNTE2MjM5MDIyfQ.MPpd2M_WTvul3KAEPRU8gdNW65ZmNO5C7exJn2VN0dU
       - key: OPENAI_API_KEY
-        value: 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
+        value: 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
       - key: PINECONE_API_KEY
         value: 35cb9f2b-bede-4b7f-9d09-a317b651844c
       - key: PINECONE_ENVIRONMENT
         value: asia-northeast1-gcp
       - key: PINECONE_INDEX
-        value: anoeses-vector
+        value: retriever-langchain

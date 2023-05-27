@@ -9,7 +9,7 @@ import pinecone
 
 pinecone.init(api_key="35cb9f2b-bede-4b7f-9d09-a317b651844c")
 
-index = "anoeses-vector"
+index = "retriever-langchain"
 
 if index not in pinecone.list_indexes():
     pinecone.create_index(name=index, metric="cosine")
@@ -48,7 +48,7 @@ sub_app = FastAPI(
     title="Retrieval Plugin API",
     description="A retrieval API for querying and filtering documents based on natural language queries and metadata",
     version="1.0.0",
-    servers=[{"url": "https://retrieval-plugin-server-rg7s.onrender.com"}],
+    servers=[{"url": "_______.onrender.com"}],
     dependencies=[Depends(validate_token)],
 )
 app.mount("/sub", sub_app)

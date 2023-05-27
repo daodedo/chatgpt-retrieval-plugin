@@ -27,7 +27,7 @@ import os, pinecone
 pinecone.init(api_key=os.environ['35cb9f2b-bede-4b7f-9d09-a317b651844c'],
               environment=os.environ['asia-northeast1-gcp'])
 
-pinecone.create_index(name=os.environ['anoeses-vector'],
+pinecone.create_index(name=os.environ['retriever-langchain'],
                       dimension=1536,
                       metric='cosine',
                       metadata_config={

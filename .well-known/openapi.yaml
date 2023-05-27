@@ -5,6 +5,7 @@ info:
   version: 1.0.0
   servers:
     - url: http://retrieval-plugin-server-rg7s.onrender.com
+paths:
   /query:
     post:
       summary: Query

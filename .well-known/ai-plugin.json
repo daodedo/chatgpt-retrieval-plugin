@@ -10,10 +10,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://memory-plugin-oqu8m.ondigitalocean.app//.well-known/openapi.yaml",
+    "url": "https://memory-plugin-oqu8m.ondigitalocean.app/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
-  "logo_url": "https://memory-plugin-oqu8m.ondigitalocean.app//.well-known/logo.png",
+  "logo_url": "https://memory-plugin-oqu8m.ondigitalocean.app/.well-known/logo.png",
   "contact_email": "hello@contact.com",
-  "legal_info_url": "https://memory-plugin-oqu8m.ondigitalocean.app//legal"
+  "legal_info_url": "https://memory-plugin-oqu8m.ondigitalocean.app/legal"
 }

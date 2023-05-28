@@ -7,7 +7,7 @@ from fastapi.staticfiles import StaticFiles
 
 import pinecone
 
-pinecone.init(api_key="35cb9f2b-bede-4b7f-9d09-a317b651844c")
+pinecone.init(api_key="560251c2-6f52-46f3-ad41-d6e551c346a1")
 
 index = "anoeses-vector"
 

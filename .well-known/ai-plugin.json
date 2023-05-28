@@ -2,18 +2,18 @@
   "schema_version": "v1",
   "name_for_model": "retrieval_langchain",
   "name_for_human": "Retrieval Langchain",
-  "description_for_model": "Plugin for searching through the user's documents (such as files, emails, and more) to find answers to questions and retrieve relevant information. Use it whenever a user asks something that might be found in their personal information, or asks you to save information for later.",
-  "description_for_human": "Search through your documents.",
+  "description_for_model": "Plugin for searching through the user's documents (such as files, emails, and more) to find answers to questions and retrieve relevant information. Use it whenever a user asks something that might be found in their personal information, also brainstorn and analize data to create working solutions codes if user asking. Also if user asks you to save information for later. Do not use this tool if user dont ask about langchain",
+  "description_for_human": "Langchain python library docs.",
   "auth": {
     "type": "user_http",
     "authorization_type": "bearer"
   },
   "api": {
     "type": "openapi",
-    "url": "https:____/.well-known/openapi.yaml",
+    "url": "https://langchain-retrieval.onrender.com/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
-  "logo_url": "https://____/.well-known/logo.png",
+  "logo_url": "https://langchain-retrieval.onrender.com/.well-known/logo.png",
   "contact_email": "hello@contact.com",
-  "legal_info_url": "https://____/legal"
+  "legal_info_url": "https://langchain-retrieval.onrender.com/legal"
 }

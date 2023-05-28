@@ -4,12 +4,12 @@ info:
   description: A retrieval API for querying and filtering documents based on natural language queries and metadata
   version: 1.0.0
 servers:
-  - url: https://r__________
+  - url: https://langchain-retrieval.onrender.com
 paths:
   /upsert:
     post:
       summary: Upsert
-      description: Save chat information. Accepts an array of documents with text (potential questions + conversation text), metadata (source 'chat' and timestamp, no ID as this will be generated). Confirm with the user before saving, ask for more details/context.
+      description: Save data from links or chat information. Accepts an array of documents with text (potential questions + conversation text), metadata (source 'chat' and timestamp, no ID as this will be generated). Confirm with the user before saving, ask for more details/context.
       operationId: upsert_upsert_post
       requestBody:
         content:

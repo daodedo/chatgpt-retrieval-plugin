@@ -24,10 +24,10 @@ If you want to create your own index with custom configurations, you can do so u
 
 import os, pinecone
 
-pinecone.init(api_key=os.environ['PINECONE_API_KEY'],
-              environment=os.environ['PINECONE_ENVIRONMENT'])
+pinecone.init(api_key=os.environ['a3277599-7063-4060-8420-fadb7e6238c0'],
+              environment=os.environ['asia-northeast1-gcp'])
 
-pinecone.create_index(name=os.environ['PINECONE_INDEX'],
+pinecone.create_index(name=os.environ['retriever-langchain'],
                       dimension=1536,
                       metric='cosine',
                       metadata_config={

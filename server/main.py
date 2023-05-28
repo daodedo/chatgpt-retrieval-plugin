@@ -1,9 +1,20 @@
 import os
-from typing import Optional
+from typing import Optional 
 import uvicorn
 from fastapi import FastAPI, File, Form, HTTPException, Depends, Body, UploadFile
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.staticfiles import StaticFiles
+
+import pinecone
+
+pinecone.init(api_key="a3277599-7063-4060-8420-fadb7e6238c0")
+
+index = "retriever-langchain"
+
+if index not in pinecone.list_indexes():
+    pinecone.create_index(name=index, metric="cosine")
+
+pinecone_index = pinecone.Index(index_name=index)
 
 from models.api import (
     DeleteRequest,
@@ -37,7 +48,7 @@ sub_app = FastAPI(
     title="Retrieval Plugin API",
     description="A retrieval API for querying and filtering documents based on natural language queries and metadata",
     version="1.0.0",
-    servers=[{"url": "https://your-app-url.com"}],
+    servers=[{"url": "https://retrieval-plugin-server-h07a.onrender.com"}],
     dependencies=[Depends(validate_token)],
 )
 app.mount("/sub", sub_app)

@@ -14,7 +14,7 @@ services:
       - key: OPENAI_API_KEY
         value: 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
       - key: PINECONE_API_KEY
-        value: 35cb9f2b-bede-4b7f-9d09-a317b651844c
+        value: a3277599-7063-4060-8420-fadb7e6238c0
       - key: PINECONE_ENVIRONMENT
         value: asia-northeast1-gcp
       - key: PINECONE_INDEX

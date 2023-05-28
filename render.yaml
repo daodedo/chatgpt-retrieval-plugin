@@ -12,10 +12,10 @@ services:
       - key: BEARER_TOKEN
         value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwOTA5MDk4ODgiLCJuYW1lIjoiZG9icmlrIiwiaWF0IjoxNTE2MjM5MDIyfQ.MPpd2M_WTvul3KAEPRU8gdNW65ZmNO5C7exJn2VN0dU
       - key: OPENAI_API_KEY
-        value: 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
+        value: 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
       - key: PINECONE_API_KEY
-        value: 35cb9f2b-bede-4b7f-9d09-a317b651844c
+        value: 560251c2-6f52-46f3-ad41-d6e551c346a1
       - key: PINECONE_ENVIRONMENT
-        value: asia-northeast1-gcp
+        value: us-central1-gcp
       - key: PINECONE_INDEX
         value: anoeses-vector

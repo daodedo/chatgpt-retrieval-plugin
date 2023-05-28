@@ -4,7 +4,7 @@ info:
   description: A retrieval  API lets you search through the LangChain Python library documents.
   version: 1.0.0
 servers:
-  - url: https://retrieval-plugin-server-h07a.onrender.com.
+  - url: https://retrieval-plugin-server-h07a.onrender.com
 paths:
   /query:
     post:

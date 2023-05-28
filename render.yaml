@@ -10,7 +10,7 @@ services:
       - key: DATASTORE
         value: pinecone
       - key: BEARER_TOKEN
-        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNjY5OTExODg4IiwibmFtZSI6ImRvYnJpayIsImlhdCI6MTUxNjIzOTAyMn0.PJsHu4ofV1lK92IIT1dYNf7EZH9Ihhdu9OH0-KVcOVE9
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwOTA5MDk4ODgiLCJuYW1lIjoiZG9icmlrIiwiaWF0IjoxNTE2MjM5MDIyfQ.MPpd2M_WTvul3KAEPRU8gdNW65ZmNO5C7exJn2VN0dU
       - key: OPENAI_API_KEY
         value: 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
       - key: PINECONE_API_KEY

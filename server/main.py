@@ -7,7 +7,7 @@ from fastapi.staticfiles import StaticFiles
 
 import pinecone
 
-pinecone.init(api_key="35cb9f2b-bede-4b7f-9d09-a317b651844c")
+pinecone.init(api_key="a3277599-7063-4060-8420-fadb7e6238c0")
 
 index = "retriever-langchain"
 

@@ -6,7 +6,7 @@ info:
     language queries and metadata
   version: 1.0.0
 servers:
-  - url: /sub
+  - url: https://memory-plugin-oqu8m.ondigitalocean.app/sub
   - url: https://memory-plugin-oqu8m.ondigitalocean.app/
 paths:
   /upsert:

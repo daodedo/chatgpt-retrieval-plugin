@@ -9,7 +9,7 @@ def extract_metadata_from_document(text: str) -> Dict[str, str]:
     sources_string = ", ".join(sources)
     # This prompt is just an example, change it to fit your use case
     messages = [
-        {
+        {  
             "role": "system",
             "content": f"""
             Given a document from a user, try to extract the following metadata:

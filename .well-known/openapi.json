@@ -7,10 +7,10 @@
   },
   "servers": [
     {
-      "url": "http://0.0.0.0:8000/sub"
+      "url": "https://memory-plugin-oqu8m.ondigitalocean.app/sub/"
     },
     {
-      "url": "https://memory-plugin-oqu8m.ondigitalocean.app/sub"
+      "url": "anoeses-vector-d903874.svc.asia-northeast1-gcp.pinecone.io/"
     }
   ],
   "paths": {

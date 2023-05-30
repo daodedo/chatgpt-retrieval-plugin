@@ -8,14 +8,16 @@ import docx2txt
 import csv
 import pptx
 
-from models.models import Document, DocumentMetadata
+from models.models import Document, DocumentMetadata, Source
 
 
 async def get_document_from_file(
     file: UploadFile, metadata: DocumentMetadata
 ) -> Document:
     extracted_text = await extract_text_from_form_file(file)
-
+    metadata = DocumentMetadata(
+    source=Source.file,
+    )
     doc = Document(text=extracted_text, metadata=metadata)
 
     return doc
